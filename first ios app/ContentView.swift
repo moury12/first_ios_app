@@ -1,4 +1,4 @@
-//
+  //
 //  ContentView.swift
 //  first ios app
 //
@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+      ZStack {
+          Color(.black).ignoresSafeArea()
+          VStack {
+              Image("bmw_img").resizable().aspectRatio(contentMode:.fit).cornerRadius(15).padding(10)
+                  
+              Text("Hello, world!").font(.largeTitle).fontWeight(.semibold).foregroundColor(.blue)
+          }
         }
-        .padding()
+    
     }
 }
 
